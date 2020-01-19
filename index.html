@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>No Allies Here</title>
+
+		<!-- BOOTSTRAP -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+		<!-- BASE -->
+		<link rel="stylesheet" href="static/css/basestyle.css">
+	</head>
+	<body>    
+		<div id="game-start-menu">
+			<p id="language-set">Language: English</p>
+			<p id="menu-title">NO ALLIES HERE</p>
+			<p id="start-button">Play</p>
+			<p id="credits">By. Yurius564 - it is recommended to play on Chrome.</p>
+		</div>
+		
+		<div id="game-box">
+			<p id="title">NO ALLIES HERE</p>
+			<div class="row">
+				<div class="col-4 menu-box">
+					<div id="inventory" class="shadow-box">
+						<p id="inventory-title">inventory</p>
+						<ul id="items-list" class="game-list">
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-4 menu-box">
+					<div id="floor-map" class="shadow-box">
+						<p id="level-title">1º floor</p>
+						<ul id="rooms-list" class="game-list">
+						</ul>
+					</div>
+				</div>
+
+				<div class="col-4 menu-box">
+					<div id="room-action" class="shadow-box">
+						<p id="action-title">action</p>
+						<ul id="actions-list" class="game-list">
+						</ul>
+					</div>
+				</div>
+				
+				<div id="dialog-box" class="col-12 menu-box">
+					<div id="dialog" class="shadow-box">
+						<p id="comments-title" style="margin-bottom:5px;">comments</p>
+						<span id="dialog-text"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		
+
+		<!-- JQUERY 3.4.1 -->
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.min.js"
+			integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+			crossorigin="anonymous">
+		</script>
+		<!-- BOOTSTRAP -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+		</script>
+
+	
+		<script type="text/javascript" src="static/js/addons.js"></script>
+		<script type="text/javascript" src="static/js/translator.js"></script>
+		<script type="text/javascript" src="static/js/engine.js"></script>
+	</body>
+</html>

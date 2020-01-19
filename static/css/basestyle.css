@@ -1,0 +1,175 @@
+:root {
+	--background-color: #060606;
+	--game-color: #0a0a0a;
+
+	--base-color: white;
+	--unhover-color: #929292;
+
+	--warning-color: #ff8383;
+	--rewarning-color: #ff3434;
+}
+
+* {
+	color: var(--base-color);
+	font-family: monospace;
+}
+
+p {
+	font-size: 16px;
+	text-decoration: underline;
+}
+
+body {
+	background-color: black;
+	padding: 0;
+	margin: 0;
+}
+
+#game-start-menu {
+	position: absolute;
+	display: block;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 1000px;
+	height: 500px;
+	padding: 0 10px;
+	text-align: center;
+	background-color: var(--game-color);
+	box-shadow: var(--game-color) 0 0 10px 10px;
+	z-index: 2;
+}
+
+#menu-title {
+	font-size: 100px;
+	text-decoration: none;
+	margin: 100px 0 5px 0;
+	
+	animation-name: pump;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes pump{
+	0%{
+		transform:  scale(1.0,1.0);
+	}
+	50%{
+		transform: scale(1.1,1.1);
+	}
+	100%{
+		transform: scale(1.0,1.0);
+	}
+}
+
+#language-set {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+#start-button {
+	text-decoration: none;
+	font-size: 30px;
+	margin-top: 20px;
+	color: var(--unhover-color);
+	transition: color 0.5s, background-color 1s, box-shadow 1s;
+}
+#start-button:hover {
+	cursor: pointer;
+	color: var(--base-color);
+	background-color: var(--background-color);
+	box-shadow: var(--background-color) 0 0 10px 10px;
+}
+
+
+#game-box {
+	position: absolute;
+	display: block;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	width: 1000px;
+	height: 500px;
+	padding: 0 10px;
+	text-align: center;
+	background-color: var(--game-color);
+	box-shadow: var(--game-color) 0 0 10px 10px;
+}
+
+/* by yurius564 */
+
+#title {
+	font-size: 20px;
+	text-decoration: none;
+	margin: 7px 0 5px 0;
+}
+
+.menu-box {
+	padding: 10px;
+}
+.menu-box .shadow-box {
+	background-color: var(--background-color);
+	box-shadow: var(--background-color) 0 0 5px 5px;
+}
+
+#floor-map {
+	min-height: 300px;
+}
+
+#room-action {
+	min-height: 300px;
+}
+
+#inventory {
+	min-height: 300px;
+}
+
+#dialog-box {
+	height: 140px;
+}
+
+#dialog {
+	height: 100%;
+}
+#dialog-text {
+	padding: 0 20px;
+	font-size: 17px;
+	color: var(--warning-color);
+}
+
+
+.game-list {
+	padding-left: 80px;
+	padding: 0;
+}
+.game-list li{
+	width: fit-content;
+	margin-left: 50%;
+	transform: translate(-50%);
+	font-size: 13px;
+	width: fit-content;
+	color: var(--unhover-color);
+}
+.game-list li:hover{
+	color: var(--base-color);
+	cursor: pointer;
+}
+.room.room-selected {
+	color: var(--base-color);
+}
+.room.zombie-here {
+	color: var(--warning-color);
+}
+.room.zombie-here:hover {
+	color: var(--rewarning-color);
+}
+.room.zombie-here.room-selected {
+	color: var(--rewarning-color);
+}
+
+.item-qnt {
+	color: var(--unhover-color);
+}
