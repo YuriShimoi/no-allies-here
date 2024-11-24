@@ -3,7 +3,7 @@
  */
 
 const GAMELANGUAGES = ["es","pt"]
-GAMELANGUAGE = 0;
+GAMELANGUAGE = 1;
 
 
 const GAMEROOM = {
